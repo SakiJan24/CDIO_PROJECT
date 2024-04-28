@@ -24,7 +24,7 @@
     <h2>Registro</h2>
     <form action="#" method="POST">
         <div class="input-box">
-            <input type="text" name="nombreApellido" placeholder="Ingrese su nombre" required>
+            <input type="text" name="nombreApellido" placeholder="Ingrese su nombre prueba" required>
         </div>
         <select name="genero">
             <option value="Hombre">Hombre</option>
