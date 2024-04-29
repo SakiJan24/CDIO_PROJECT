@@ -88,7 +88,7 @@
         else {
 
             
-            $sql = "INSERT INTO users2 (name, sex, imei, age, document_type, document_id) 
+            $sql = "INSERT INTO users (name, sex, mac_address, age, document_type, document_number) 
             VALUES ('$username', '$genero', '$imei', $edad, '$tipoDoc', '$cedula');";
             mysqli_query($conn, $sql);
             

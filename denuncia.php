@@ -68,7 +68,7 @@
 
             
 
-            $sql1 = "SELECT user FROM users WHERE cedula = '{$cedula}'";
+            $sql1 = "SELECT user FROM users WHERE document_number = '{$cedula}'";
             $row = mysqli_query($conn, $sql1);
             if(empty($sql1)) {
 
@@ -76,13 +76,14 @@
 
             else {  
 
-                $sql2 = "INSERT INTO denuncia2 (document_id, estacion )
+                $sql2 = "INSERT INTO denuncia (document_number, estacion )
                     VALUES('$cedula', '$estacion')";
                 mysqli_query($conn, $sql2);
+                include("exito2.php");
             }
            
             
-            include("exito2.php");
+            
         }
     }
 

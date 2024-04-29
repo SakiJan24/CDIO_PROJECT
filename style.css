@@ -12,15 +12,16 @@ body{
   justify-content: center;
   background: #4070f4;
 }
-.wrapper{
+.wrapper {
   position: relative;
-  max-width: 430px;
-  width: 100%;
+  min-width: 20%; /* Adjust as needed */
+  width: auto;
   background: #fff;
   padding: 34px;
   border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .wrapper h2{
   position: relative;
   font-size: 22px;
@@ -131,4 +132,21 @@ header img {
   height: auto; /* Maintain aspect ratio */
   border-radius: 6px;
   margin: 0 auto; /* Center the image horizontally */
+}
+
+
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
