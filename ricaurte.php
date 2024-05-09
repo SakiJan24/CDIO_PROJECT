@@ -14,7 +14,7 @@
 </header>
 <body>
 <div class="wrapper">
-    <h2>Registros</h2>
+    <h2>Denuncias</h2>
     <table>
         <tr>
             <th>Nombre</th>
