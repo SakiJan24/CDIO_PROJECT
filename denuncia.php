@@ -68,11 +68,12 @@
 
             
 
-            $sql1 = "SELECT user FROM users WHERE document_number = '{$cedula}'";
+            $sql1 = "SELECT * FROM users WHERE document_number = '{$cedula}'";
             $row = mysqli_query($conn, $sql1);
             
             if(empty($row)) {
                 //echo "user not registered, please register before denouncing";
+                echo $row;
                 include("fallo.php");
             }
 
